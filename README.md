@@ -1,5 +1,5 @@
 # allfarm
-Java Swing SE프로젝트 - 농작물 키우기 게임
+Java Swing SE 개인프로젝트 - 농작물 키우기 게임
 
 개발목표
   - Java Swing GUI 컴포넌트 활용 능력 향상

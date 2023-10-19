@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://localhost:8081/alcohol/payment/paymentmain -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link href="./결제 위젯_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	  <title>결제 위젯</title>
+	  <script src="./결제 위젯_files/payment-widget"></script>
+	  <style>
+	    #payment-button{ width:100%; padding:15px; background-color:#3065AC; color:white; border-radius:3px; font-size:16px; border:none; margin-top:10px}
+		.title {margin: 0 0 4px; font-size: 24px; font-weight: 600;color: #4e5968;}
+	  </style>
+	</head>
+
+	<body>
+	   <!-- 상품 정보 영역-->
+	  <div class="title">주문 예정 상품 정보</div>
+	  <div class="my-2">
+			<label class="form-label" for="name">판매자</label>
+			<input class="form-control" id="name" value="" readonly="">
+		</div>
+		<div class="my-2">	
+			<label class="form-label" for="phone">상품</label> <input class="form-control" id="phone" value="" readonly="">
+		</div>
+		<div class="my-2">
+			<label class="form-label" for="adress">상품정보</label>
+			<textarea class="form-control" id="adress" readonly=""></textarea>
+		</div>
+		<div class="my-2">
+			<label class="form-label" for="email">이메일</label> <input class="form-control" id="email" value="" readonly="">
+		</div>
+		<hr>	
+	  
+	  <form id="discount-coupon">
+	    <input type="checkbox" id="coupon">5,000원 할인받기 
+	  </form>
+	  <hr>	
+	  
+	  	<div class="title">배송지 정보</div>
+	  		<li>
+	  			<a href="http://localhost:8081/alcohol/payment/modify">배송지 수정</a>
+			</li>
+		<div class="my-2">
+			<label class="form-label" for="name">이름</label>
+			<input class="form-control" id="name" value="" readonly="">
+		</div>
+		<div class="my-2">
+			<label class="form-label" for="adress">주소</label>
+			<textarea class="form-control" id="adress" readonly=""></textarea>
+		</div>
+		<div class="my-2">	
+			<label class="form-label" for="phone">핸드폰 번호</label>
+			<input class="form-control" id="phone" value="" readonly="">
+		</div>
+		<div class="my-2">
+			<label class="form-label" for="email">이메일</label>
+			<input class="form-control" id="email" value="" readonly="">
+		</div>
+		<hr>	
+		
+		<div class="title">계산서</div>
+		<hr>
+	
+	  <!-- 결제 방법 영역-->
+	  <div class="title">결제 방법</div>
+	  <div id="payment-method"><div class="__tosspayments_payment_widget_iframe_wrapper__" style="position: relative; width: 100%; height: auto;"><div class="__tosspayments_payment_widget_iframe_skeleton__" style="position: absolute; top: 0px; left: 0px; width: 100%; min-height: 172px; display: none; flex-direction: column; gap: 8px; padding: 30px; box-sizing: border-box;"><div style="width: 100%; height: 56px !important; background: linear-gradient(96deg, #f7f7f7 0%, hsl(0, 0%, 99%) 100%); border-radius: 8px;"></div><div style="width: 100%; height: 56px !important; background: linear-gradient(96deg, #f7f7f7 0%, hsl(0, 0%, 99%) 100%); border-radius: 8px;"></div></div><iframe src="./결제 위젯_files/payment-methods.html" title="토스페이먼츠 결제위젯" style="display: block; border: 0px; width: 100%; height: 250.797px;"></iframe></div></div>
+	  <div id="agreement"><div class="__tosspayments_payment_widget_iframe_wrapper__" style="position: relative; width: 100%;"><iframe src="./결제 위젯_files/agreement.html" title="토스페이먼츠 결제위젯" style="display: block; border: 0px; width: 100%; height: 90px;"></iframe></div></div> 
+	  <button id="payment-button">결제하기</button>
+	  
+	  <a href="http://localhost:8081/alcohol/payment/information?num=0">주문/결제 내역</a>
+	  
+	<script src="./결제 위젯_files/payment-paymentmain.js.다운로드"></script>
+	<script src="./결제 위젯_files/bootstrap.bundle.min.js.다운로드" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+	</script>	
+	
+</body></html>
